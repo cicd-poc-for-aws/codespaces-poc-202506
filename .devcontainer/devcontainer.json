@@ -1,0 +1,33 @@
+{
+  // codespaces上で表示されるラベル名
+  "name": "Laravel Dev Container",
+  // ターゲットのdocker-compoaseファイルを指定
+  "dockerComposeFile": "./docker-compose.yml",
+  // 開発環境を構築するコンテナ（docker-compose.ymlのservicesと連動）
+  "service": "php-fpm",
+  // コンテナ作成時に開くフォルダ
+  "workspaceFolder": "/var/www"
+  // ,
+  // モジュールのインストールや設定を行うためのスクリプト
+  // "features": {
+  //   "ghcr.io/devcontainers/features/php:1": {
+  //     "version": "8.2"
+  //   },
+  //   "ghcr.io/devcontainers/features/composer:1": {},
+  //   "ghcr.io/devcontainers/features/node:1": {
+  //     "version": "18"
+  //   }
+  // }
+  // ,
+  // "postCreateCommand": "composer install && php artisan key:generate",
+  // "forwardPorts": [8000],
+  // "customizations": {
+  //   "vscode": {
+  //     "extensions": [
+  //       "bmewburn.vscode-intelephense-client",
+  //       "onecentlin.laravel-blade",
+  //       "xdebug.php-debug"
+  //     ]
+  //   }
+  // }
+}

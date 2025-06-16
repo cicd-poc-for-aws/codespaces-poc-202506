@@ -1,0 +1,1020 @@
+<EntityDescriptor ID="_9e09bc67-9139-46df-bb8e-6a5be5aa7606" entityID="http://sts.hd.tlcg.jp/adfs/services/trust"
+                  xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="#_9e09bc67-9139-46df-bb8e-6a5be5aa7606">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <ds:DigestValue>IO9aiJDv1+n0zc4pr0tMvI38aia2AkZQO2zz2yz0p5M=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+            PegP+KXQi8uGE/8y6fHmDFAkG1YoKtIPGE9RwIWIPtRIhiYojX8lJy8KvZoSCrViWsE6uWHcOMznvpC99rlUniuQYFgjEDRuWPYTKgrYDw6CmTHqoiJfhUbJqi0cBWx/5UZ8rom4vOYqUT/t3C7zkhrBvil5SJiEHsLPKkiKVKXSqzcesSEy6iNgwqGd8Jz5HChl4TX05WCGupUBkGOTlA24Z3jiM6i8jFjSYAg/rH1fs1pDpvUZtVt2dA93esrTzmud2VrEvD9FIJJ0XpnCUwEdEainCrEvSU7brB/kp+URPKdcwvn6uUJjhtj8XTRmVBbL0fgeZqltaVOo/IqSng==
+        </ds:SignatureValue>
+        <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <X509Data>
+                <X509Certificate>
+                    MIIC2jCCAcKgAwIBAgIQTIfqIuminbJMIrQBCWCmBzANBgkqhkiG9w0BAQsFADAoMSYwJAYDVQQDEx1BREZTIFNpZ25pbmcgLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MThaGA8yMDY0MDgxOTAzMjQxOFowKDEmMCQGA1UEAxMdQURGUyBTaWduaW5nIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnB/YhZiROITnuHGFg//yQ/i+WMgob9yEUrrob48TEUkqX7N5fqvYx439CzImDLt2s8dW2bIeBiiuKuLzt5M2z94MNPYYwaK644hg/JghegG549HAM47NVvolKGfdn4N2HyaelqaxtbdE1sFP7Q32J/8yzot8LNTlFZQ9Z4Og9WDtHTC6ZCUywZNScmk/f0/KkSaVqYTZtFA5v/L7vVbiqc5CM/Od5iKmemFMUN8ZthRNPaFq1rj5gdtZSslflVgEFrVa4Dhx6ieCUC1vGvsIRF5iR8z+nqmQCHKeTyRODAKyQk95Gd8nKzjUqWCxp0ijMTlRbEpFiRHA8gTes1iePAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC0I3g81XT9WBlnhDuARsHHhAklY86eNgeJFIsjIGTK/GjW85KSpTaW2MREMQAY56WZen5MIe//VAzRLcyUX+Zio/u8e/OMMKob8lH8JazfYm/meQ29gmu9DG7AghrbjzMrNPzb+3lq43yVZgNMVoJviwttl0oaFM3ao3MZU7MAoKEPFoXsc5m7/69tvuPa1YOrtdkuC9xm1wAqV1Ngz4QUNbEiAYWc74uFShngNAfr19UeUa9Qp/B4KXk2EwrPz1Mv5EfBCn2CClpLxQM4aSJhEur1rkUUUmvoJIKUHfIH2NoIk164cXIpRIhr6z5L3pgsrWMrLXoEjJUEoYWJhsXU=
+                </X509Certificate>
+            </X509Data>
+        </KeyInfo>
+    </ds:Signature>
+    <RoleDescriptor xsi:type="fed:ApplicationServiceType"
+                    protocolSupportEnumeration="http://docs.oasis-open.org/ws-sx/ws-trust/200512 http://schemas.xmlsoap.org/ws/2005/02/trust http://docs.oasis-open.org/wsfed/federation/200706"
+                    ServiceDisplayName="Tokyu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+        <KeyDescriptor use="encryption">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC4DCCAcigAwIBAgIQUBIiaW7W/65JkCCWqweUcjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDEyBBREZTIEVuY3J5cHRpb24gLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MTdaGA8yMDY0MDgxOTAzMjQxN1owKzEpMCcGA1UEAxMgQURGUyBFbmNyeXB0aW9uIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDli2H2dHr3w4ToJYxy08tpPYD+1/PZA8kTUastCI7znnETzwqecX7MmIop5pe8DfF2FWyCrfQ5PW7JYSiX+U+0IYL+eJXFaqAg4A+l3mJMLjgGfD2nROaIlfNjbhrsgQy0uAZFz2IIN7VxGcMQO8AqvcMeY/f3ojl/Oc8Yhc4KmyPBepAL6g1/7TX+wZ/QF4Kr7dRLfgSYTswBE49DEy4dXXl+3u9gFunTcV4wEgjEwwu4EXGhVmP/JkhR/bvT0zynnxZx9TqiXCVwnEcNpyr3lNIZWh/8G/EF0lHdFfDcsuy6uXLEjAzwEMb91De/jZ4Gd6ghA/gSNIKdIj64IKHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAHlbGJ/Kr264Iqssw/18jRWVeaX7ggS+Oe9ywFvEprBWakm393mJ3ZLz7kvHJ7REsXIyhZ5wItGto7tmNKlY1OohQf8kFz1EnCYjPN/s3sVnNLFd4CA3anZTdxs7RiZ7VLHfpd2rgaOZsm5hKewxMVFPb7Qd3LQaKffoIPmeIEY+valXzdCqvHzlqKD73C1jJG4YgxhCwbZG2bcRh1qtS5/8J+zeVxY5ShXH99QpB0XhM1EnvdR4uHX7Mjh5CvWlBWi8ElpO+eHkCkhNviSsTCRL9Zu/M87AeXCT65Hi5EKUkJ45qVHAUhFX/X3GUUISIT5JY+BrBq1I8DQsIQQW998=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <fed:ClaimTypesRequested>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>電子メール アドレス</auth:DisplayName>
+                <auth:Description>ユーザーの電子メール アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>指定名</auth:DisplayName>
+                <auth:Description>ユーザーの指定名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>名前</auth:DisplayName>
+                <auth:Description>ユーザーの一意の名前</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>UPN</auth:DisplayName>
+                <auth:Description>ユーザーのユーザー プリンシパル名 (UPN)</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/CommonName" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>共通名</auth:DisplayName>
+                <auth:Description>ユーザーの共通名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/EmailAddress" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>AD FS 1.x 電子メール アドレス</auth:DisplayName>
+                <auth:Description>AD FS 1.1 または AD FS 1.0 と相互運用するときのユーザーの電子メール アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/Group" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>グループ</auth:DisplayName>
+                <auth:Description>ユーザーが所属するグループ</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/UPN" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>AD FS 1.x UPN</auth:DisplayName>
+                <auth:Description>AD FS 1.1 または AD FS 1.0 と相互運用するときのユーザーの UPN</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>役割</auth:DisplayName>
+                <auth:Description>ユーザーに割り当てられた役割</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Surname</auth:DisplayName>
+                <auth:Description>ユーザーの姓</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>PPID</auth:DisplayName>
+                <auth:Description>ユーザーの個人識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>名前 ID</auth:DisplayName>
+                <auth:Description>ユーザーの SAML 名識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証タイム スタンプ</auth:DisplayName>
+                <auth:Description>ユーザーが認証された時刻と日付を表示するために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証方法</auth:DisplayName>
+                <auth:Description>ユーザーの認証に使用する方法</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみグループ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのグループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみプライマリ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのプライマリ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみプライマリ グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのプライマリ グループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーのグループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プライマリ グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーのプライマリ グループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プライマリ SID</auth:DisplayName>
+                <auth:Description>ユーザーのプライマリ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Windows アカウント名</auth:DisplayName>
+                <auth:Description>ドメイン\ユーザー形式のユーザーのドメイン アカウント名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/isregistereduser"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>登録ユーザー</auth:DisplayName>
+                <auth:Description>ユーザーはこのデバイスを使用するために登録されています</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/identifier" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイス識別子</auth:DisplayName>
+                <auth:Description>デバイスの識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/registrationid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Device Registration 識別子</auth:DisplayName>
+                <auth:Description>Device Registration の識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/displayname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Device Registration DisplayName</auth:DisplayName>
+                <auth:Description>Device Registration の表示名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/ostype" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイスの OS の種類</auth:DisplayName>
+                <auth:Description>デバイスの OS の種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/osversion" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイスの OS バージョン</auth:DisplayName>
+                <auth:Description>デバイスの OS バージョン</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/ismanaged" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>管理されるデバイス</auth:DisplayName>
+                <auth:Description>デバイスは管理サービスによって管理されています</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-forwarded-client-ip"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>転送されるクライアント IP</auth:DisplayName>
+                <auth:Description>ユーザーの IP アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-application"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント アプリケーション</auth:DisplayName>
+                <auth:Description>クライアント アプリケーションの種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-user-agent"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント ユーザー エージェント</auth:DisplayName>
+                <auth:Description>クライアントがアプリケーションにアクセスするために使用しているデバイスの種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-ip"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント IP</auth:DisplayName>
+                <auth:Description>クライアントの IP アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-endpoint-absolute-path"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>エンドポイントのパス</auth:DisplayName>
+                <auth:Description>アクティブ クライアントとパッシブ クライアントの判断に使用できるエンドポイントの絶対パス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プロキシ</auth:DisplayName>
+                <auth:Description>要求を渡したフェデレーション サーバー プロキシの DNS 名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/relyingpartytrustid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>アプリケーション識別子</auth:DisplayName>
+                <auth:Description>証明書利用者の識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/applicationpolicy"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>アプリケーション ポリシー</auth:DisplayName>
+                <auth:Description>証明書のアプリケーション ポリシー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/authoritykeyidentifier"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>機関キー識別子</auth:DisplayName>
+                <auth:Description>発行証明書に署名した証明書の機関キー識別子拡張</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/basicconstraints"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>基本的な制約</auth:DisplayName>
+                <auth:Description>証明書の基本的な制約のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/eku" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拡張キー使用法</auth:DisplayName>
+                <auth:Description>証明書の拡張キー使用法のいずれかについて説明します</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuer" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>発行者</auth:DisplayName>
+                <auth:Description>X.509 証明書を発行した証明機関の名前</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuername"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>発行者名</auth:DisplayName>
+                <auth:Description>証明書発行者の識別名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/keyusage"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>キー使用法</auth:DisplayName>
+                <auth:Description>証明書のキー使用法のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/notafter" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>有効期間の終了日</auth:DisplayName>
+                <auth:Description>証明書が有効ではなくなった日付 (ローカル時間)</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/notbefore"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>有効期間の開始日</auth:DisplayName>
+                <auth:Description>証明書が有効になったローカル時間の日付</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatepolicy"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>証明書ポリシー</auth:DisplayName>
+                <auth:Description>証明書を発行したポリシー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>公開キー</auth:DisplayName>
+                <auth:Description>証明書の公開キー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/rawdata" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>証明書の生データ</auth:DisplayName>
+                <auth:Description>証明書の生データ</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/san" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクトの代替名</auth:DisplayName>
+                <auth:Description>証明書の代替名のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/serialnumber" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>シリアル番号</auth:DisplayName>
+                <auth:Description>証明書のシリアル番号</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/signaturealgorithm"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>署名アルゴリズム</auth:DisplayName>
+                <auth:Description>証明書の署名の作成に使用されているアルゴリズム</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/subject" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト</auth:DisplayName>
+                <auth:Description>証明書のサブジェクト</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/subjectkeyidentifier"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト キー識別子</auth:DisplayName>
+                <auth:Description>証明書のサブジェクト キー識別子について説明します</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/subjectname"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト名</auth:DisplayName>
+                <auth:Description>証明書のサブジェクトの識別名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplateinformation"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>V2 テンプレート名</auth:DisplayName>
+                <auth:Description>証明書の発行時または更新時に使用されたバージョン 2 の証明書テンプレート名。拡張子は Microsoft 固有です。</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplatename"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>V1 テンプレート名</auth:DisplayName>
+                <auth:Description>証明書の発行時または更新時に使用されたバージョン 1 の証明書テンプレート名。拡張子は Microsoft 固有です。</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拇印</auth:DisplayName>
+                <auth:Description>証明書の拇印</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/x509version"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>X.509 のバージョン</auth:DisplayName>
+                <auth:Description>証明書の X.509 形式のバージョン</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>会社ネットワーク内</auth:DisplayName>
+                <auth:Description>要求が会社ネットワーク内から送信されたかどうかを示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの有効期限</auth:DisplayName>
+                <auth:Description>パスワードの有効期限が切れる時間を示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordexpirationdays" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの有効期限日数</auth:DisplayName>
+                <auth:Description>パスワードの有効期限の日数を示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordchangeurl" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの更新 URL</auth:DisplayName>
+                <auth:Description>パスワード更新サービスの Web アドレスを示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/claims/authnmethodsreferences" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証方法の参照</auth:DisplayName>
+                <auth:Description>ユーザーの認証に使用するすべての認証方法を指定するために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/client-request-id"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント要求 ID</auth:DisplayName>
+                <auth:Description>ユーザー セッションの識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2013/11/alternateloginid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>代替ログイン ID</auth:DisplayName>
+                <auth:Description>ユーザーの代替ログイン ID</auth:Description>
+            </auth:ClaimType>
+        </fed:ClaimTypesRequested>
+        <fed:TargetScopes>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/2005/issuedtokenmixedasymmetricbasic256</Address>
+            </EndpointReference>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/2005/issuedtokenmixedsymmetricbasic256</Address>
+            </EndpointReference>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/13/issuedtokenmixedasymmetricbasic256</Address>
+            </EndpointReference>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/13/issuedtokenmixedsymmetricbasic256</Address>
+            </EndpointReference>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/ls/</Address>
+            </EndpointReference>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>http://sts.hd.tlcg.jp/adfs/services/trust</Address>
+            </EndpointReference>
+        </fed:TargetScopes>
+        <fed:ApplicationServiceEndpoint>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/2005/issuedtokenmixedasymmetricbasic256</Address>
+            </EndpointReference>
+        </fed:ApplicationServiceEndpoint>
+        <fed:PassiveRequestorEndpoint>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/ls/</Address>
+            </EndpointReference>
+        </fed:PassiveRequestorEndpoint>
+    </RoleDescriptor>
+    <RoleDescriptor xsi:type="fed:SecurityTokenServiceType"
+                    protocolSupportEnumeration="http://docs.oasis-open.org/ws-sx/ws-trust/200512 http://schemas.xmlsoap.org/ws/2005/02/trust http://docs.oasis-open.org/wsfed/federation/200706"
+                    ServiceDisplayName="Tokyu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC2jCCAcKgAwIBAgIQTIfqIuminbJMIrQBCWCmBzANBgkqhkiG9w0BAQsFADAoMSYwJAYDVQQDEx1BREZTIFNpZ25pbmcgLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MThaGA8yMDY0MDgxOTAzMjQxOFowKDEmMCQGA1UEAxMdQURGUyBTaWduaW5nIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnB/YhZiROITnuHGFg//yQ/i+WMgob9yEUrrob48TEUkqX7N5fqvYx439CzImDLt2s8dW2bIeBiiuKuLzt5M2z94MNPYYwaK644hg/JghegG549HAM47NVvolKGfdn4N2HyaelqaxtbdE1sFP7Q32J/8yzot8LNTlFZQ9Z4Og9WDtHTC6ZCUywZNScmk/f0/KkSaVqYTZtFA5v/L7vVbiqc5CM/Od5iKmemFMUN8ZthRNPaFq1rj5gdtZSslflVgEFrVa4Dhx6ieCUC1vGvsIRF5iR8z+nqmQCHKeTyRODAKyQk95Gd8nKzjUqWCxp0ijMTlRbEpFiRHA8gTes1iePAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC0I3g81XT9WBlnhDuARsHHhAklY86eNgeJFIsjIGTK/GjW85KSpTaW2MREMQAY56WZen5MIe//VAzRLcyUX+Zio/u8e/OMMKob8lH8JazfYm/meQ29gmu9DG7AghrbjzMrNPzb+3lq43yVZgNMVoJviwttl0oaFM3ao3MZU7MAoKEPFoXsc5m7/69tvuPa1YOrtdkuC9xm1wAqV1Ngz4QUNbEiAYWc74uFShngNAfr19UeUa9Qp/B4KXk2EwrPz1Mv5EfBCn2CClpLxQM4aSJhEur1rkUUUmvoJIKUHfIH2NoIk164cXIpRIhr6z5L3pgsrWMrLXoEjJUEoYWJhsXU=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <fed:TokenTypesOffered>
+            <fed:TokenType Uri="urn:oasis:names:tc:SAML:2.0:assertion"/>
+            <fed:TokenType Uri="urn:oasis:names:tc:SAML:1.0:assertion"/>
+        </fed:TokenTypesOffered>
+        <fed:ClaimTypesOffered>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>電子メール アドレス</auth:DisplayName>
+                <auth:Description>ユーザーの電子メール アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>指定名</auth:DisplayName>
+                <auth:Description>ユーザーの指定名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>名前</auth:DisplayName>
+                <auth:Description>ユーザーの一意の名前</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>UPN</auth:DisplayName>
+                <auth:Description>ユーザーのユーザー プリンシパル名 (UPN)</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/CommonName" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>共通名</auth:DisplayName>
+                <auth:Description>ユーザーの共通名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/EmailAddress" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>AD FS 1.x 電子メール アドレス</auth:DisplayName>
+                <auth:Description>AD FS 1.1 または AD FS 1.0 と相互運用するときのユーザーの電子メール アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/Group" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>グループ</auth:DisplayName>
+                <auth:Description>ユーザーが所属するグループ</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/UPN" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>AD FS 1.x UPN</auth:DisplayName>
+                <auth:Description>AD FS 1.1 または AD FS 1.0 と相互運用するときのユーザーの UPN</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>役割</auth:DisplayName>
+                <auth:Description>ユーザーに割り当てられた役割</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Surname</auth:DisplayName>
+                <auth:Description>ユーザーの姓</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>PPID</auth:DisplayName>
+                <auth:Description>ユーザーの個人識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>名前 ID</auth:DisplayName>
+                <auth:Description>ユーザーの SAML 名識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証タイム スタンプ</auth:DisplayName>
+                <auth:Description>ユーザーが認証された時刻と日付を表示するために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証方法</auth:DisplayName>
+                <auth:Description>ユーザーの認証に使用する方法</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみグループ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのグループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみプライマリ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのプライマリ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拒否のみプライマリ グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーの拒否のみのプライマリ グループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーのグループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プライマリ グループ SID</auth:DisplayName>
+                <auth:Description>ユーザーのプライマリ グループ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プライマリ SID</auth:DisplayName>
+                <auth:Description>ユーザーのプライマリ SID</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Windows アカウント名</auth:DisplayName>
+                <auth:Description>ドメイン\ユーザー形式のユーザーのドメイン アカウント名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/isregistereduser"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>登録ユーザー</auth:DisplayName>
+                <auth:Description>ユーザーはこのデバイスを使用するために登録されています</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/identifier" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイス識別子</auth:DisplayName>
+                <auth:Description>デバイスの識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/registrationid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Device Registration 識別子</auth:DisplayName>
+                <auth:Description>Device Registration の識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/displayname" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>Device Registration DisplayName</auth:DisplayName>
+                <auth:Description>Device Registration の表示名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/ostype" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイスの OS の種類</auth:DisplayName>
+                <auth:Description>デバイスの OS の種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/osversion" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>デバイスの OS バージョン</auth:DisplayName>
+                <auth:Description>デバイスの OS バージョン</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/devicecontext/claims/ismanaged" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>管理されるデバイス</auth:DisplayName>
+                <auth:Description>デバイスは管理サービスによって管理されています</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-forwarded-client-ip"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>転送されるクライアント IP</auth:DisplayName>
+                <auth:Description>ユーザーの IP アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-application"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント アプリケーション</auth:DisplayName>
+                <auth:Description>クライアント アプリケーションの種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-user-agent"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント ユーザー エージェント</auth:DisplayName>
+                <auth:Description>クライアントがアプリケーションにアクセスするために使用しているデバイスの種類</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-ip"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント IP</auth:DisplayName>
+                <auth:Description>クライアントの IP アドレス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-endpoint-absolute-path"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>エンドポイントのパス</auth:DisplayName>
+                <auth:Description>アクティブ クライアントとパッシブ クライアントの判断に使用できるエンドポイントの絶対パス</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>プロキシ</auth:DisplayName>
+                <auth:Description>要求を渡したフェデレーション サーバー プロキシの DNS 名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/relyingpartytrustid"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>アプリケーション識別子</auth:DisplayName>
+                <auth:Description>証明書利用者の識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/applicationpolicy"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>アプリケーション ポリシー</auth:DisplayName>
+                <auth:Description>証明書のアプリケーション ポリシー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/authoritykeyidentifier"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>機関キー識別子</auth:DisplayName>
+                <auth:Description>発行証明書に署名した証明書の機関キー識別子拡張</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/basicconstraints"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>基本的な制約</auth:DisplayName>
+                <auth:Description>証明書の基本的な制約のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/eku" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拡張キー使用法</auth:DisplayName>
+                <auth:Description>証明書の拡張キー使用法のいずれかについて説明します</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuer" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>発行者</auth:DisplayName>
+                <auth:Description>X.509 証明書を発行した証明機関の名前</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuername"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>発行者名</auth:DisplayName>
+                <auth:Description>証明書発行者の識別名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/keyusage"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>キー使用法</auth:DisplayName>
+                <auth:Description>証明書のキー使用法のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/notafter" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>有効期間の終了日</auth:DisplayName>
+                <auth:Description>証明書が有効ではなくなった日付 (ローカル時間)</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/notbefore"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>有効期間の開始日</auth:DisplayName>
+                <auth:Description>証明書が有効になったローカル時間の日付</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatepolicy"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>証明書ポリシー</auth:DisplayName>
+                <auth:Description>証明書を発行したポリシー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>公開キー</auth:DisplayName>
+                <auth:Description>証明書の公開キー</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/rawdata" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>証明書の生データ</auth:DisplayName>
+                <auth:Description>証明書の生データ</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/san" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクトの代替名</auth:DisplayName>
+                <auth:Description>証明書の代替名のいずれか</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/serialnumber" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>シリアル番号</auth:DisplayName>
+                <auth:Description>証明書のシリアル番号</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/signaturealgorithm"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>署名アルゴリズム</auth:DisplayName>
+                <auth:Description>証明書の署名の作成に使用されているアルゴリズム</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/subject" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト</auth:DisplayName>
+                <auth:Description>証明書のサブジェクト</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/subjectkeyidentifier"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト キー識別子</auth:DisplayName>
+                <auth:Description>証明書のサブジェクト キー識別子について説明します</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/subjectname"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>サブジェクト名</auth:DisplayName>
+                <auth:Description>証明書のサブジェクトの識別名</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplateinformation"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>V2 テンプレート名</auth:DisplayName>
+                <auth:Description>証明書の発行時または更新時に使用されたバージョン 2 の証明書テンプレート名。拡張子は Microsoft 固有です。</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType
+                    Uri="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplatename"
+                    Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>V1 テンプレート名</auth:DisplayName>
+                <auth:Description>証明書の発行時または更新時に使用されたバージョン 1 の証明書テンプレート名。拡張子は Microsoft 固有です。</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>拇印</auth:DisplayName>
+                <auth:Description>証明書の拇印</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/12/certificatecontext/field/x509version"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>X.509 のバージョン</auth:DisplayName>
+                <auth:Description>証明書の X.509 形式のバージョン</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>会社ネットワーク内</auth:DisplayName>
+                <auth:Description>要求が会社ネットワーク内から送信されたかどうかを示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの有効期限</auth:DisplayName>
+                <auth:Description>パスワードの有効期限が切れる時間を示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordexpirationdays" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの有効期限日数</auth:DisplayName>
+                <auth:Description>パスワードの有効期限の日数を示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2012/01/passwordchangeurl" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>パスワードの更新 URL</auth:DisplayName>
+                <auth:Description>パスワード更新サービスの Web アドレスを示すために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/claims/authnmethodsreferences" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>認証方法の参照</auth:DisplayName>
+                <auth:Description>ユーザーの認証に使用するすべての認証方法を指定するために使用されます</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/2012/01/requestcontext/claims/client-request-id"
+                            Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>クライアント要求 ID</auth:DisplayName>
+                <auth:Description>ユーザー セッションの識別子</auth:Description>
+            </auth:ClaimType>
+            <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2013/11/alternateloginid" Optional="true"
+                            xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+                <auth:DisplayName>代替ログイン ID</auth:DisplayName>
+                <auth:Description>ユーザーの代替ログイン ID</auth:Description>
+            </auth:ClaimType>
+        </fed:ClaimTypesOffered>
+        <fed:SecurityTokenServiceEndpoint>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/services/trust/2005/certificatemixed</Address>
+                <Metadata>
+                    <Metadata xmlns="http://schemas.xmlsoap.org/ws/2004/09/mex"
+                              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                              xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+                        <wsx:MetadataSection Dialect="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns="">
+                            <wsx:MetadataReference>
+                                <Address xmlns="http://www.w3.org/2005/08/addressing">
+                                    https://sts.hd.tlcg.jp/adfs/services/trust/mex
+                                </Address>
+                            </wsx:MetadataReference>
+                        </wsx:MetadataSection>
+                    </Metadata>
+                </Metadata>
+            </EndpointReference>
+        </fed:SecurityTokenServiceEndpoint>
+        <fed:PassiveRequestorEndpoint>
+            <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+                <Address>https://sts.hd.tlcg.jp/adfs/ls/</Address>
+            </EndpointReference>
+        </fed:PassiveRequestorEndpoint>
+    </RoleDescriptor>
+    <SPSSODescriptor WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="encryption">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC4DCCAcigAwIBAgIQUBIiaW7W/65JkCCWqweUcjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDEyBBREZTIEVuY3J5cHRpb24gLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MTdaGA8yMDY0MDgxOTAzMjQxN1owKzEpMCcGA1UEAxMgQURGUyBFbmNyeXB0aW9uIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDli2H2dHr3w4ToJYxy08tpPYD+1/PZA8kTUastCI7znnETzwqecX7MmIop5pe8DfF2FWyCrfQ5PW7JYSiX+U+0IYL+eJXFaqAg4A+l3mJMLjgGfD2nROaIlfNjbhrsgQy0uAZFz2IIN7VxGcMQO8AqvcMeY/f3ojl/Oc8Yhc4KmyPBepAL6g1/7TX+wZ/QF4Kr7dRLfgSYTswBE49DEy4dXXl+3u9gFunTcV4wEgjEwwu4EXGhVmP/JkhR/bvT0zynnxZx9TqiXCVwnEcNpyr3lNIZWh/8G/EF0lHdFfDcsuy6uXLEjAzwEMb91De/jZ4Gd6ghA/gSNIKdIj64IKHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAHlbGJ/Kr264Iqssw/18jRWVeaX7ggS+Oe9ywFvEprBWakm393mJ3ZLz7kvHJ7REsXIyhZ5wItGto7tmNKlY1OohQf8kFz1EnCYjPN/s3sVnNLFd4CA3anZTdxs7RiZ7VLHfpd2rgaOZsm5hKewxMVFPb7Qd3LQaKffoIPmeIEY+valXzdCqvHzlqKD73C1jJG4YgxhCwbZG2bcRh1qtS5/8J+zeVxY5ShXH99QpB0XhM1EnvdR4uHX7Mjh5CvWlBWi8ElpO+eHkCkhNviSsTCRL9Zu/M87AeXCT65Hi5EKUkJ45qVHAUhFX/X3GUUISIT5JY+BrBq1I8DQsIQQW998=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC2jCCAcKgAwIBAgIQTIfqIuminbJMIrQBCWCmBzANBgkqhkiG9w0BAQsFADAoMSYwJAYDVQQDEx1BREZTIFNpZ25pbmcgLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MThaGA8yMDY0MDgxOTAzMjQxOFowKDEmMCQGA1UEAxMdQURGUyBTaWduaW5nIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnB/YhZiROITnuHGFg//yQ/i+WMgob9yEUrrob48TEUkqX7N5fqvYx439CzImDLt2s8dW2bIeBiiuKuLzt5M2z94MNPYYwaK644hg/JghegG549HAM47NVvolKGfdn4N2HyaelqaxtbdE1sFP7Q32J/8yzot8LNTlFZQ9Z4Og9WDtHTC6ZCUywZNScmk/f0/KkSaVqYTZtFA5v/L7vVbiqc5CM/Od5iKmemFMUN8ZthRNPaFq1rj5gdtZSslflVgEFrVa4Dhx6ieCUC1vGvsIRF5iR8z+nqmQCHKeTyRODAKyQk95Gd8nKzjUqWCxp0ijMTlRbEpFiRHA8gTes1iePAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC0I3g81XT9WBlnhDuARsHHhAklY86eNgeJFIsjIGTK/GjW85KSpTaW2MREMQAY56WZen5MIe//VAzRLcyUX+Zio/u8e/OMMKob8lH8JazfYm/meQ29gmu9DG7AghrbjzMrNPzb+3lq43yVZgNMVoJviwttl0oaFM3ao3MZU7MAoKEPFoXsc5m7/69tvuPa1YOrtdkuC9xm1wAqV1Ngz4QUNbEiAYWc74uFShngNAfr19UeUa9Qp/B4KXk2EwrPz1Mv5EfBCn2CClpLxQM4aSJhEur1rkUUUmvoJIKUHfIH2NoIk164cXIpRIhr6z5L3pgsrWMrLXoEjJUEoYWJhsXU=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                  Location="https://sts.hd.tlcg.jp/adfs/ls/" index="0" isDefault="true"/>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                  Location="https://sts.hd.tlcg.jp/adfs/ls/" index="1"/>
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                  Location="https://sts.hd.tlcg.jp/adfs/ls/" index="2"/>
+    </SPSSODescriptor>
+    <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="encryption">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC4DCCAcigAwIBAgIQUBIiaW7W/65JkCCWqweUcjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDEyBBREZTIEVuY3J5cHRpb24gLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MTdaGA8yMDY0MDgxOTAzMjQxN1owKzEpMCcGA1UEAxMgQURGUyBFbmNyeXB0aW9uIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDli2H2dHr3w4ToJYxy08tpPYD+1/PZA8kTUastCI7znnETzwqecX7MmIop5pe8DfF2FWyCrfQ5PW7JYSiX+U+0IYL+eJXFaqAg4A+l3mJMLjgGfD2nROaIlfNjbhrsgQy0uAZFz2IIN7VxGcMQO8AqvcMeY/f3ojl/Oc8Yhc4KmyPBepAL6g1/7TX+wZ/QF4Kr7dRLfgSYTswBE49DEy4dXXl+3u9gFunTcV4wEgjEwwu4EXGhVmP/JkhR/bvT0zynnxZx9TqiXCVwnEcNpyr3lNIZWh/8G/EF0lHdFfDcsuy6uXLEjAzwEMb91De/jZ4Gd6ghA/gSNIKdIj64IKHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAHlbGJ/Kr264Iqssw/18jRWVeaX7ggS+Oe9ywFvEprBWakm393mJ3ZLz7kvHJ7REsXIyhZ5wItGto7tmNKlY1OohQf8kFz1EnCYjPN/s3sVnNLFd4CA3anZTdxs7RiZ7VLHfpd2rgaOZsm5hKewxMVFPb7Qd3LQaKffoIPmeIEY+valXzdCqvHzlqKD73C1jJG4YgxhCwbZG2bcRh1qtS5/8J+zeVxY5ShXH99QpB0XhM1EnvdR4uHX7Mjh5CvWlBWi8ElpO+eHkCkhNviSsTCRL9Zu/M87AeXCT65Hi5EKUkJ45qVHAUhFX/X3GUUISIT5JY+BrBq1I8DQsIQQW998=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIC2jCCAcKgAwIBAgIQTIfqIuminbJMIrQBCWCmBzANBgkqhkiG9w0BAQsFADAoMSYwJAYDVQQDEx1BREZTIFNpZ25pbmcgLSBzdHMuaGQudGxjZy5qcDAgFw0xNDA5MDEwMzI0MThaGA8yMDY0MDgxOTAzMjQxOFowKDEmMCQGA1UEAxMdQURGUyBTaWduaW5nIC0gc3RzLmhkLnRsY2cuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnB/YhZiROITnuHGFg//yQ/i+WMgob9yEUrrob48TEUkqX7N5fqvYx439CzImDLt2s8dW2bIeBiiuKuLzt5M2z94MNPYYwaK644hg/JghegG549HAM47NVvolKGfdn4N2HyaelqaxtbdE1sFP7Q32J/8yzot8LNTlFZQ9Z4Og9WDtHTC6ZCUywZNScmk/f0/KkSaVqYTZtFA5v/L7vVbiqc5CM/Od5iKmemFMUN8ZthRNPaFq1rj5gdtZSslflVgEFrVa4Dhx6ieCUC1vGvsIRF5iR8z+nqmQCHKeTyRODAKyQk95Gd8nKzjUqWCxp0ijMTlRbEpFiRHA8gTes1iePAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC0I3g81XT9WBlnhDuARsHHhAklY86eNgeJFIsjIGTK/GjW85KSpTaW2MREMQAY56WZen5MIe//VAzRLcyUX+Zio/u8e/OMMKob8lH8JazfYm/meQ29gmu9DG7AghrbjzMrNPzb+3lq43yVZgNMVoJviwttl0oaFM3ao3MZU7MAoKEPFoXsc5m7/69tvuPa1YOrtdkuC9xm1wAqV1Ngz4QUNbEiAYWc74uFShngNAfr19UeUa9Qp/B4KXk2EwrPz1Mv5EfBCn2CClpLxQM4aSJhEur1rkUUUmvoJIKUHfIH2NoIk164cXIpRIhr6z5L3pgsrWMrLXoEjJUEoYWJhsXU=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                             Location="https://sts.hd.tlcg.jp/adfs/ls/"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="電子メール アドレス"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="指定名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="名前"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="UPN"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/claims/CommonName"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="共通名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/claims/EmailAddress"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="AD FS 1.x 電子メール アドレス"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/claims/Group"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="グループ"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/claims/UPN"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="AD FS 1.x UPN"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="役割"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Surname"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="PPID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="名前 ID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="認証タイム スタンプ"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="認証方法"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="拒否のみグループ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="拒否のみプライマリ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="拒否のみプライマリ グループ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="グループ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="プライマリ グループ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="プライマリ SID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Windows アカウント名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/isregistereduser"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="登録ユーザー"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/identifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="デバイス識別子"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/registrationid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Device Registration 識別子"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/displayname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+                   FriendlyName="Device Registration DisplayName" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/ostype"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="デバイスの OS の種類"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/osversion"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="デバイスの OS バージョン"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/ismanaged"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="管理されるデバイス"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-forwarded-client-ip"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="転送されるクライアント IP"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-application"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="クライアント アプリケーション"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-user-agent"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="クライアント ユーザー エージェント"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-ip"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="クライアント IP"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-endpoint-absolute-path"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="エンドポイントのパス"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="プロキシ"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/relyingpartytrustid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="アプリケーション識別子"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/applicationpolicy"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="アプリケーション ポリシー"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/authoritykeyidentifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="機関キー識別子"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/basicconstraints"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="基本的な制約"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/eku"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="拡張キー使用法"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuer"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="発行者"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuername"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="発行者名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/keyusage"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="キー使用法"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/notafter"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="有効期間の終了日"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/notbefore"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="有効期間の開始日"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatepolicy"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="証明書ポリシー"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="公開キー"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/rawdata"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="証明書の生データ"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/san"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="サブジェクトの代替名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/serialnumber"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="シリアル番号"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/signaturealgorithm"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="署名アルゴリズム"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/subject"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="サブジェクト"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/subjectkeyidentifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="サブジェクト キー識別子"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/subjectname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="サブジェクト名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute
+                Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplateinformation"
+                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="V2 テンプレート名"
+                xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplatename"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="V1 テンプレート名"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="拇印"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/x509version"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="X.509 のバージョン"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="会社ネットワーク内"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="パスワードの有効期限"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2012/01/passwordexpirationdays"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="パスワードの有効期限日数"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2012/01/passwordchangeurl"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="パスワードの更新 URL"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="認証方法の参照"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/client-request-id"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="クライアント要求 ID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <Attribute Name="http://schemas.microsoft.com/ws/2013/11/alternateloginid"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="代替ログイン ID"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    </IDPSSODescriptor>
+    <ContactPerson contactType="support"/>
+</EntityDescriptor>
