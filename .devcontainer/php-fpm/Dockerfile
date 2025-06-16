@@ -1,6 +1,7 @@
 #FROM php:fpm-alpine
 #FROM php:7.3-fpm-alpine
-FROM php:8.0.7-fpm-alpine
+# FROM php:8.0.7-fpm-alpine
+FROM php:8.2-fpm
 
 # fix work iconv library with alphine
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ --allow-untrusted gnu-libiconv
